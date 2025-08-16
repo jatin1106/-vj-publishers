@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VJ Publishers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+            color: white;
+            text-align: center;
+        }
+        header {
+            padding: 20px;
+            background: linear-gradient(90deg, #ff0099, #00ffff);
+            font-size: 24px;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            border: none;
+        }
+        button {
+            background: #ff0099;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #00ffff;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>VJ Publishers</header>
+
+    <section>
+        <h2>Affiliate Marketing & Lead Generation</h2>
+        <p>Phone: <a href="tel:+918878763910" style="color:#00ffff">+91 8878763910</a></p>
+        <p>Email: <a href="mailto:vjsr1106@gmail.com" style="color:#00ffff">vjsr1106@gmail.com</a></p>
+    </section>
+
+    <section>
+        <h3>Get in Touch</h3>
+        <form id="leadForm">
+            <input type="text" id="name" placeholder="Your Name" required><br>
+            <input type="email" id="email" placeholder="Your Email" required><br>
+            <input type="text" id="phone" placeholder="Your Phone" required><br>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="msg"></p>
+    </section>
+
+    <script>
+        document.getElementById('leadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            document.getElementById('msg').innerText = "✅ Your lead has been submitted!";
+        });
+    </script>
+</body>
+                    </html>
